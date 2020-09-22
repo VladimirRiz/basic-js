@@ -10,8 +10,8 @@ class VigenereCipheringMachine {
       const reg = /[a-zA-Z]/;
       let count = 0,
         lowerM = message.toLowerCase(),
-        lowerK = key.toLowerCase();
-      arr = [];
+        lowerK = key.toLowerCase(),
+        arr = [];
       for (let i = 0; i < message.length; i++) {
         if (reg.test(message[i])) {
           let code = lowerK.charCodeAt(count);
