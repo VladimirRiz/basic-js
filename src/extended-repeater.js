@@ -14,8 +14,6 @@ module.exports = function repeater(str, options) {
     ? options.additionRepeatTimes
     : 1;
 
-  console.log(options.repeatTimes);
-
   let line = "";
   let arr = [];
 
@@ -29,7 +27,6 @@ module.exports = function repeater(str, options) {
     line += "/";
   }
   let divide = line.split("/");
-  console.log(divide);
   divide.pop();
 
   for (e of divide) {
